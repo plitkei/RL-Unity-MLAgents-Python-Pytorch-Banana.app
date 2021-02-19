@@ -43,20 +43,24 @@ You just need to unzip it and reference it from the project.
 I would recommend to choose a fresh environmnet from the current ML-Agent github repo. 
 It is a bit more work at the begining, since you have to compile it for your system and you also need to install Unity. 
 The problem with the very old versions like this. It is almost immpossible to collect the right (old) versions of the python/pytorch/ML-Agents circle -just to name a few.
+
 If you have the curtesy to use a newer app. In the navigation.ipynb 
 do not use the:  *from unityagents import UnityEnvironment*
 Use the **from mlagents_envs.environment import UnityEnvironment**
 The unityagents are in a different folder in the newer version. So you **Do not** need to pip install unityagents. there is package called like this and that is a very old version of the ML-Agents.
+
 This is how u can set up a new environment:
 https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md
 
+
 *Basically, there is a Unity application what we will call from python with the ML-Agents help. That will be the connection between the unity app and the pytorch code in order to train the Agent.*
+
 
 We have our model in the **model.py** file.
 And the DQN algorithm that uses the model in the **dqn_agent.py** file.
 The connection between unity and the model is in the **navigation.ipynb**
 
-#We are going to use DQN - Deep Q-Learning to solve this task.#
+# We are going to use DQN - Deep Q-Learning to solve this task.
 
 In the **dqn_agent.py** there is a standard implementation of a DQN algorithm using Experience replay and Fix Q Target. A very similiar modell was used at deepmind to learn all the Atari game. [click here to read more about it](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 The **model.py** is a "standard" MLP which we use to determine the best action for a current state. These two files are used in the **navigation.ipynb**
