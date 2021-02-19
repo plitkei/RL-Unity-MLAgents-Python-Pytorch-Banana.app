@@ -23,9 +23,10 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
-### Getting Started
+### Getting Started 
 
 The environment I have used:
+
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
     - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
@@ -36,11 +37,16 @@ The environment I have used:
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
 You just need to unzip it and reference it from the project.
-But I would recommend to choose a fresh environmnet from the current ML-Agent github repo. It is a bit more work since you have to compile it for your system, by installing Unity... The problem with the very old versions like this. It is almost immpossible to collect the right (old) versions of the python/pytorch/ML-Agents circle -just to name a few.
+
+# Build your own Unity environment
+
+I would recommend to choose a fresh environmnet from the current ML-Agent github repo. 
+It is a bit more work at the begining, since you have to compile it for your system and you also need to install Unity. 
+The problem with the very old versions like this. It is almost immpossible to collect the right (old) versions of the python/pytorch/ML-Agents circle -just to name a few.
 If you have the curtesy to use a newer app. In the navigation.ipynb 
 do not use the:  *from unityagents import UnityEnvironment*
 Use the **from mlagents_envs.environment import UnityEnvironment**
-The unityagents are in a different folder in the newer version. In that case **Do not** pip install unityagents. - It exists and that is a very old version of the ML-Agents.
+The unityagents are in a different folder in the newer version. So you **Do not** need to pip install unityagents. there is package called like this and that is a very old version of the ML-Agents.
 This is how u can set up a new environment:
 https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md
 
