@@ -20,11 +20,11 @@ Changing the epsilon had the most effect for me. The 0.55 and the 0.985 was a go
 
 I tuned the values to be fast to reach the 13 points. I would have used probably a smaller learning rate, the UPDATE_EVERY would have been bigger, and also the epsilon. I would also choose a bigger capacity network - if the task would be to reach infinity points.
 
-#The training result
+# The training result
 
 ![result](https://github.com/plitkei/RL-Unity-MLAgents-Python-Pytorch-Banana.app/blob/main/result.jpg)
 
-#Future improvements
+# Future improvements
 
 Better hyperparameter tuning, Using DDQN or Prioritized Experience Replay or Rainbow 
 
