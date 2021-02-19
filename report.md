@@ -1,6 +1,6 @@
 ## Hyperparameter tuning
 All Neural net project has to be adjusted. In this project the following parameter were choosen:
-The neural is a 37x64x64x4 size. (Input 37, 2 hidden layer and the output is 4)
+The neural net is a 37x64x64x4 size. (Input 37, 2 hidden layer and the output is 4)
 
 
 BUFFER_SIZE = int(1e5)  # replay buffer size - we can define how many experiences we would like to collect
@@ -14,3 +14,5 @@ def dqn(n_episodes=2000, max_t=1000, eps_start=0.55, eps_end=0.01, eps_decay=0.9
 Changing the epsilon had the most effect for me. The 0.55 and the 0.985 was a good combo. I usually changed them together since we basically making it smaller and small at each iteration(episode)
 
 I tuned the values to be fast to reach the 13 points. I would have used probably a smaller learning rate, the UPDATE_EVERY would have been bigger, and also the epsilon. - if the task would be to reach as much as we can.
+
+The training result is in the **report.html** or in the **navigation.ipynb**
