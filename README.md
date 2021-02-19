@@ -67,7 +67,7 @@ The **model.py** is a "standard" MLP which we use to determine the best action f
 
 The beauty of these algorithms that you can apply it for other games/problems as well. You just have to adjust the MLP input and output size to adapt to your project.
 
-Normally the weights can be quite big. I decided to upload it because it has a relative small size. Usi it to compare if you want to. **checkpoint.pth**
+Normally the weights can be quite big. I decided to upload it because it has a relative small size. Use it if you want to. **checkpoint.pth**
 
 
 
